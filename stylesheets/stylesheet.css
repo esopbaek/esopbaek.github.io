@@ -44,9 +44,9 @@ html, body {
 
 html, body, ul, li, a, h1, h2, h3, h4, h5, hr, article, section, div, p {
 	margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
+  padding: 0;
+  border: 0;
+  font: inherit;
 }
 
   /* THE IMPORTANT SIDEBAR STUFF */
@@ -314,10 +314,6 @@ ul {
     list-style: none;
 }
 
-h1, li, p {
-    padding: 10px;
-}
-
 h1 {
     font-size: 40px;
     font-weight: bold;
@@ -353,21 +349,43 @@ h1 {
 /*RESUME PAGE*/
 
 div.resume {
-  border: 1px solid orange;
-  width: 800px;
-  margin: 0 auto;
+  padding: 20px;
+  width: 850px;
+  margin: 50px auto;
   font-family: arial;
-  line-height: 1;
   background: white;
 };
 
+div.resume div.download {
+  float:right;
+}
+
 div.resume > p > strong {
  color: blue;
+ font-size: 10px
 }
 
 div.resume > h2 {
   font-size: 50px;
 }
+
+div.resume table {
+  margin-top: 10px;
+}
+
+div.resume tr {
+}
+
+div.resume table li {
+  list-style: disc;
+  list-style-type: disc;
+}
+
+div.resume td {
+  padding: 10px;
+  border-top: 1px dotted grey;
+}
+
 
 span.blue {
   color: #4CAEE3;
