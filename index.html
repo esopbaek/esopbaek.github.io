@@ -1,1 +1,109 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script src="javascripts/jquery-1.11.1.min.js"></script>
+    <script src="javascripts/jquery.js"></script>
+    <title>Esop Baek</title>
+  </head>
+
+  <body>
+  	<nav class="sidebar">
+        <img src="http://www.gravatar.com/avatar/217b7142509f0466e8042c84c3c7f3ca" />
+        <h3>Esop Baek</h3>
+        <h5>RoR/JavaScript Developer</h5>
+        <ul>
+          <li class="home">
+            Home
+            <i class="fa fa-home"></i>
+          </li>
+          <li>
+            Projects
+            <i class="fa fa-th"></i>
+          </li>
+          <li>
+            Resume
+            <i class="fa fa-file-text-o"></i>
+          </li>
+        </ul>
+        <footer>
+          <ul>
+            <li>
+              <a href="http://www.linkedin.com/in/esopbaek">
+                <i class="fa fa-linkedin-square"></i>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="http://www.github.com/esopbaek">
+              <i class="fa fa-github"></i>
+              Github
+              </a>
+            </li>
+            <li>
+              <a href="mailto:esop.baek@gmail.com">
+              <i class="fa fa-envelope"></i>
+              Contact
+              </a>
+            </li>
+        </footer>
+  		</nav>
+
+      <div class="push">
+  		  <div class=main>
+  			<button><i class="fa fa-navicon"></i></button>
+        <!-- HOMEPAGE -->
+        <div class=home-page hidden>
+          <h1>Esop Baek</h1>
+          <h3>Software Developer</h3>
+
+          <p>I am a recent graduate of Dartmouth College looking to kickstart a career in web/software development. I have a passion for writing clean code and developing simple solutions to complex problems. I have experience with Rails, Javascript, JQuery, Backbone.js, RSpec, and more. Shoot me an <a href="mailto:esop.baek@gmail.com">email</a> for opportunities or collaborative ideas for new projects!</p>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class=projects>
+          <h1>Projects</h1>
+          <!-- Your Fitness Pal -->
+          <section class=yourfitnesspal>
+            <h3><b>YourFitnessPal <em>(Rails, Backbone.js)</em></b> | <a href="#">live</a> | <a href="#">source code</a></h3>
+            <em>Fitness journal web-app modeled after MyFitnessPal. Calorie counter, food & exercise 
+tracker, blogging platform, and social networking site, all featured in one app.</em>
+            <div class=image group>
+              <div class=diary><img src=images/Diary.png alt="YourFitnessPal-Diary"></div>
+              <div class=database><img src=images/DataBase.png alt="YourFitnessPal-FoodDatabase"></div>
+            </div>
+              <div class="desc">
+                <ul>
+                  <li>Single-page backbone app consuming RESTful Rails API</li>
+                  <li>Utilizes 3rd party API (Nutritionix) to create database of 100,000+ foods</li>
+                  <li>Calculates user-specific daily calorie targets using Mifflin-St. Jeor equations to 
+estimate user’s basal metabolic rate</li>
+                </ul>
+              </div>
+          </section>
+          <!-- Classic Asteroids -->
+          <section class=asteroids>
+            <h3><b>Classic Asteroids</b> | <a href="#">live</a> | <a href="#">source code</a></h3>
+            <em>Classic Asteroids arcade game rebuilt in JS</em>
+            <div class=asteroidsimg group>
+              <img src=images/Asteroids.png alt="Asteroids">
+            </div>
+              <div class="desc">
+                <ul>
+                  <li>Features customized inheritance method to employ object-oriented design</li>
+                  <li>Models original game's movements of objects (ship, bullets, asteroids)</li>
+                  <li>Implements angular velocity + acceleration for ship rotation</li>
+                </ul>
+              </div>
+          </section>
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+ </html>
