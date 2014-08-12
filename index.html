@@ -13,18 +13,18 @@
   <body>
   	<nav class="sidebar">
         <img src="http://www.gravatar.com/avatar/217b7142509f0466e8042c84c3c7f3ca" />
-        <h3>Esop Baek</h3>
+        <h3><b>Esop Baek</b></h3>
         <h5>RoR/JavaScript Developer</h5>
         <ul>
           <li class="home">
             Home
             <i class="fa fa-home"></i>
           </li>
-          <li>
+          <li class="projects">
             Projects
             <i class="fa fa-th"></i>
           </li>
-          <li>
+          <li class="resume">
             Resume
             <i class="fa fa-file-text-o"></i>
           </li>
@@ -56,7 +56,7 @@
   		  <div class=main>
   			<button><i class="fa fa-navicon"></i></button>
         <!-- HOMEPAGE -->
-        <div class=home-page hidden>
+        <div class="home-page"> 
           <h1>Esop Baek</h1>
           <h3>Software Developer</h3>
 
@@ -64,30 +64,32 @@
         </div>
 
         <!-- PROJECTS -->
-        <div class=projects>
-          <h1>Projects</h1>
+        <div class="projects hidden">
+          <h1>Current Projects</h1>
           <!-- Your Fitness Pal -->
-          <section class=yourfitnesspal>
-            <h3><b>YourFitnessPal <em>(Rails, Backbone.js)</em></b> | <a href="#">live</a> | <a href="#">source code</a></h3>
-            <em>Fitness journal web-app modeled after MyFitnessPal. Calorie counter, food & exercise 
-tracker, blogging platform, and social networking site, all featured in one app.</em>
-            <div class=image group>
-              <div class=diary><img src=images/Diary.png alt="YourFitnessPal-Diary"></div>
-              <div class=database><img src=images/DataBase.png alt="YourFitnessPal-FoodDatabase"></div>
-            </div>
-              <div class="desc">
-                <ul>
-                  <li>Single-page backbone app consuming RESTful Rails API</li>
-                  <li>Utilizes 3rd party API (Nutritionix) to create database of 100,000+ foods</li>
-                  <li>Calculates user-specific daily calorie targets using Mifflin-St. Jeor equations to 
-estimate user’s basal metabolic rate</li>
-                </ul>
+          <div class="orange group">
+            <section class=yourfitnesspal>
+              <h3><b>YourFitnessPal</b></h3> (Rails, Backbone.js) | <a href="#">live</a> | <a href="#">source code</a>
+              <p><em>Fitness journal web-app modeled after MyFitnessPal. Calorie counter, food & exercise 
+  tracker, blogging platform, and social networking site, all featured in one app.</em></p>
+              <div class=image group>
+                <div class=diary><img src=images/Diary.png alt="YourFitnessPal-Diary"></div>
+                <div class=database><img src=images/DataBase.png alt="YourFitnessPal-FoodDatabase"></div>
               </div>
-          </section>
+                <div class="desc">
+                  <ul>
+                    <li>Single-page backbone app consuming RESTful Rails API</li>
+                    <li>Utilizes 3rd party API (Nutritionix) to create database of 100,000+ foods</li>
+                    <li>Calculates user-specific daily calorie targets using Mifflin-St. Jeor equations to 
+  estimate user’s basal metabolic rate</li>
+                  </ul>
+                </div>
+            </section>
+          </div>
           <!-- Classic Asteroids -->
           <section class=asteroids>
-            <h3><b>Classic Asteroids (Javascript, HTML5 Canvas)</b> | <a href="#">live</a> | <a href="#">source code</a></h3>
-            <em>Classic Asteroids arcade game rebuilt in JS</em>
+            <h3><b>Classic Asteroids</b></h3> (Javascript, HTML5 Canvas) | <a href="#">live</a> | <a href="#">source code</a>
+            <p><em>Classic Asteroids arcade game rebuilt in JS</em></p>
             <div class=asteroidsimg group>
               <img src=images/Asteroids.png alt="Asteroids">
             </div>
@@ -100,37 +102,176 @@ estimate user’s basal metabolic rate</li>
               </div>
           </section>
           <!-- Active Record Lite -->
-          <section class=activerecord>
-            <h3><b>Active Record Lite (Ruby)</b> | <a href="#">live</a> | <a href="#">source code</a></h3>
-            <em>Clone of basic Active Record functionality</em>
-            <div class=active-record-img group>
-              <img src=images/activerecord.png alt="Active Record Lite">
-            </div>
-              <div class="desc">
-                <ul>
-                  <li>Features metaprogramming in order to replicate methods</li>
-                  <li>Handles mass assignment, querying, and associations</li>
-                  <li>Implements TDD via RSpec</li>
-                </ul>
+          <div class=blue>
+            <section class=activerecord>
+              <h3><b>Active Record Lite</b></h3> (Ruby) | <a href="#">live</a> | <a href="#">source code</a>
+              <p><em>Clone of basic Active Record functionality</em></p>
+              <div class=active-record-img group>
+                <img src=images/activerecord.png alt="Active Record Lite">
               </div>
-          </section>
+                <div class="desc">
+                  <ul>
+                    <li>Features metaprogramming in order to replicate methods</li>
+                    <li>Handles mass assignment, querying, and associations</li>
+                    <li>Implements TDD via RSpec</li>
+                  </ul>
+                </div>
+            </section>
+          </div>
           <!-- Tic Tac Toe -->
           <section class=tictactoe>
-            <h3><b>Active Record Lite (Ruby)</b> | <a href="#">live</a> | <a href="#">source code</a></h3>
-            <em>Clone of basic Active Record functionality</em>
-            <div class=active-record-img group>
-              
+            <h3><b>TicTacToe</b></h3> (JQuery, Javascript) | <a href="#">live</a> | <a href="#">source code</a>
+            <p><em>Classic game built with jQuery user interface</em></p>
+            <div class=tictactoeimg group>
+              <img src=images/tictactoe.png alt="Tic Tac Toe">
             </div>
-              <div class="desc">
-                <ul>
-                  <li>Features metaprogramming in order to replicate methods</li>
-                  <li>Handles mass assignment, querying, and associations</li>
-                  <li>Implements TDD via RSpec</li>
-                </ul>
-              </div>
           </section>
         </div>
 
+        <!-- Resume -->
+        <div class="resume hidden">
+          <h2>
+    Esop <strong><span class=blue>Baek</span></strong>
+</h2>
+<p>
+    8 Clark Dr. • Great Neck, NY • 11020
+</p>
+<p>
+    <strong>CELL</strong>
+    (917) 579-3948 <strong>E-MAIL</strong> <a href="mailto:esop.baek@gmail.com">esop.baek@gmail.com</a>
+</p>
+<table>
+    <tbody>
+        <tr>
+            <td width="109" valign="top">
+                <p>
+                    <strong><span class=blue>PROJECTS</span></strong>
+                    <strong></strong>
+                </p>
+            </td>
+            <td width="529" valign="top">
+                <p>
+                    <strong>YourFitnessPal</strong>
+(Rails, Backbone.js) | <a href="file:///C:/Users/Esop%20Baek/Desktop/google.com">live</a> |                    <a href="http://www.github.com/esopbaek/FinalProject"> github</a>
+                </p>
+                <p>
+                    <em>
+                        Fitness journal web-app modeled after MyFitnessPal. Calorie counter, food &amp; exercise tracker, blogging platform, and social
+                        networking site, all featured in one app.
+                    </em>
+                </p>
+                <p>
+                    Single-page backbone app consuming RESTful Rails API
+                </p>
+                <p>
+                    Utilizes 3rd party API (Nutritionix) to create database of 100,000+ foods
+                </p>
+                <p>
+                    Calculates user-specific daily calorie targets using Mifflin-St. Jeor equations to estimate user’s basal metabolic rate
+                </p>
+                <p>
+                    <strong>Classic Asteroids </strong>
+                    (Javascript , HTML5 Canvas) | live | github
+                </p>
+                <p>
+                    <em>Classic Asteroids arcade game rebuilt in JS</em>
+                </p>
+                <p>
+                    Features customized inheritance method
+                </p>
+                <p>
+                    <strong>ActiveRecordLite </strong>
+                    (Ruby) | github
+                </p>
+                <p>
+                    <em>Clone of basic Active Record functionality</em>
+                </p>
+                <p>
+                    Features metaprogramming
+                </p>
+                <p>
+                    Handles mass assignment, querying, and associations
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="109" valign="top">
+                <p>
+                    <strong><span class=blue>SKILLS</span></strong>
+                    <strong></strong>
+                </p>
+            </td>
+            <td width="529" valign="top">
+                <p>
+                    Ruby, Rails, JavaScript, Python, Java, Backbone.js, jQuery, Git,
+                </p>
+                <p>
+                    RSpec, TDD, SQL, HTML, CSS
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="109" valign="top">
+                <p>
+                    <strong><span class=blue>EDUCATIO</span></strong>
+                    <strong></strong>
+                </p>
+            </td>
+            <td width="529" valign="top">
+                <p>
+                    <strong>Dartmouth College, 2014</strong>
+                </p>
+                <p>
+                    B.A. Psychology
+                </p>
+                <p>
+                    Relevant Coursework: Object-Oriented Problem Solving, Discrete Mathematics, Linear Algebra, Statistics, Social Psychology
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="109" valign="top">
+                <p>
+                    <strong><span class=blue>EXPERIENCE</span></strong>
+                    <strong></strong>
+                </p>
+            </td>
+            <td width="529" valign="top">
+                <p>
+                    <strong>Intern</strong>
+                    – <em>Vital Communities</em> (Dec ’13 – Feb. ‘14)
+                </p>
+                <p>
+                    Designed presentation materials for flagship event. Contributed to company’s blog and updated existing databases daily.
+                </p>
+                <p>
+                    <strong>Session Guitar Player and Tutor</strong>
+                    – <em>Dartmouth College</em> (Fall ‘12 – Spring ’14)
+                </p>
+                <p>
+                    Collaborated with professional musicians regularly for some of the biggest on-campus performances, such as Dartmouth Idol.
+                </p>
+                <p>
+                    <strong>Educational Development</strong>
+                    <em>- Big Green Bus</em>
+                    (Fall ’09 - Summer ‘10)
+                </p>
+                <p>
+                    Lead the development of curriculum and production of presentation materials for the summer tour, which promotes alternative energy. These
+                    materials and presentations reached over 10,000 people in 35+ cities in venues such as Capitol Hill, Disney World, and the Vans Warped
+                    Tour.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p align="center">
+    <strong>Github </strong>
+    <a href="http://www.github.com/esopbaek">http://www.github.com/esopbaek</a>
+    <strong> </strong>
+• <strong>LinkedIn </strong><a href="http://www.linkedin.com/in/esopbaek">http://www.linkedin.com/in/esopbaek</a><strong> </strong>•    <strong>Portfolio </strong><a href="file:///C:/Users/Esop%20Baek/Desktop/www.esopbaek.us">www.esopbaek.us</a><strong></strong>
+</p>
+        </div>
       </div>
     </div>
   </body>
