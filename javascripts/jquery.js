@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
-  $("button").on("click", function(event){
+  $("button.nav").on("click", function(event){
     $("body").toggleClass("open-menu");
-    $("button").hide();
+    $("button.nav").hide();
   });
 
   $(".push").on("click", function(event){
 
     if($(event.target).is(".push")){
       $("body").removeClass("open-menu");
-      $("button").show("slow");
+      $("button.nav").show("slow");
     }
 
   });
@@ -20,7 +20,7 @@ $(document).ready(function(){
     $("div.home-page").show("fast");
     $("div.projects").hide("slow");
     $("div.resume").hide("slow")
-    $("button").show("slow");
+    $("button.nav").show("slow");
   });
 
   $("li.projects").on("click", function(event){
@@ -29,7 +29,7 @@ $(document).ready(function(){
   	$("div.home-page").hide("slow");
     $("div.projects").show("fast");
     $("div.resume").hide("slow")
-    $("button").show("fast");
+    $("button.nav").show("fast");
   });
 
   $("li.resume").on("click", function(event){
@@ -38,6 +38,12 @@ $(document).ready(function(){
     $("div.home-page").hide("slow");
     $("div.projects").hide("slow");
     $("div.resume").show("fast")
-    $("button").show("fast");
+    $("button.nav").show("fast");
   });
+
+  $("button.projects").on("click", function(event){
+    event.preventDefault;
+    $("div.home-page").hide("slow");
+    $("div.projects").show("fast");
+  })
 });

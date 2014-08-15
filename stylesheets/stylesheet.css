@@ -71,7 +71,6 @@ html, body, ul, li, a, h1, h2, h3, h4, h5, hr, article, section, div, p {
 
     /* Sidebar is positioned absolute to not take up space in document flow. */
     position: absolute;
-    le292929
     top: 0;
     width: 200px;
 
@@ -86,7 +85,7 @@ html, body, ul, li, a, h1, h2, h3, h4, h5, hr, article, section, div, p {
 
 .sidebar > img{
 	display: block;
-	margin: 0px auto;
+	margin: 20px auto;
 }
 
 .sidebar > ul {
@@ -107,7 +106,7 @@ html, body, ul, li, a, h1, h2, h3, h4, h5, hr, article, section, div, p {
 	text-align: center;
 }
 
-li.home:hover, li.projects:hover, li.resume:hover {
+li.home:hover, li.projects:hover, li.resume:hover, li.about:hover {
 	background:black;
   color: white;
   cursor: pointer;
@@ -180,7 +179,7 @@ li.home:hover, li.projects:hover, li.resume:hover {
 	border: 1px solid black;
 }
 
-button {
+button.nav {
   text-decoration: none;
   border: none;
   background: #F6F6F6;
@@ -192,9 +191,57 @@ button {
   padding: 10px 20px;
 }
 
-button:hover {
+button.nav:hover {
   cursor: pointer;
   background: lightgrey;
+}
+
+/*HOME PAGE*/
+
+button.projects {
+  border: 1px solid grey;
+  text-decoration: none;
+  color: white;
+  padding: 10px 25px;
+  background: black;
+  margin-top:  30px;
+  font-size: 10px;
+}
+
+button.projects:hover {
+  cursor: pointer;
+}
+
+.home-page {
+  margin-top: 150px;
+}
+.home-page h1 {
+
+  font-size: 130px;
+  color: rgb(87, 218, 153);
+}
+
+.home-page h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.icons {
+  margin-top: 30px;
+}
+
+.home-page .icons a {
+  margin: 10px;
+  color: lightblue;
+}
+
+span.gray {
+  color: rgb(171, 166, 166)
+}
+
+
+span.black {
+  color: black;
 }
 
 /*PROJECTS PAGE*/
@@ -297,8 +344,13 @@ div.projects > p {
   display: inline;
 }
 
+@font-face { 
+  font-family: Edmondsans-Regular; 
+  src: url('fonts/Edmondsans-Regular.otf'); 
+} 
+
 body {
-    font-family: Raleway;
+    font-family: Edmondsans-Regular;
     background: #E0E0E0;
 }
 
@@ -326,6 +378,8 @@ h1 {
 	position:absolute;
 	bottom:0;
 	font-size: 10px;
+  margin: 0 auto;
+
 }
 
 .sidebar > footer > ul {
@@ -334,7 +388,7 @@ h1 {
 
 .sidebar > footer > ul > li {
 	float: left;
-	padding-right: 8px;
+	padding: 0 10px;
 }
 
 .sidebar > footer > ul > li > a {
