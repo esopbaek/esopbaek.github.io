@@ -18,6 +18,7 @@ $(document).ready(function(){
     event.preventDefault;
     $("body").toggleClass("open-menu");
     $("div.home-page").show("fast");
+    $("div.about").hide("slow");
     $("div.projects").hide("slow");
     $("div.resume").hide("slow")
     $("button.nav").show("slow");
@@ -26,6 +27,7 @@ $(document).ready(function(){
   $("li.projects").on("click", function(event){
   	event.preventDefault;
   	$("body").toggleClass("open-menu");
+    $("div.about").hide("slow"); 
   	$("div.home-page").hide("slow");
     $("div.projects").show("fast");
     $("div.resume").hide("slow")
@@ -35,9 +37,20 @@ $(document).ready(function(){
   $("li.resume").on("click", function(event){
     event.preventDefault;
     $("body").toggleClass("open-menu");
+    $("div.about").hide("slow");   
     $("div.home-page").hide("slow");
     $("div.projects").hide("slow");
     $("div.resume").show("fast")
+    $("button.nav").show("fast");
+  });
+
+    $("li.about").on("click", function(event){
+    event.preventDefault;
+    $("body").toggleClass("open-menu");
+    $("div.about").show("fast");   
+    $("div.home-page").hide("slow");
+    $("div.projects").hide("slow");
+    $("div.resume").hide("slow")
     $("button.nav").show("fast");
   });
 
@@ -45,5 +58,11 @@ $(document).ready(function(){
     event.preventDefault;
     $("div.home-page").hide("slow");
     $("div.projects").show("fast");
-  })
+  });
+
+  $(window).on("click", function(event){
+    event.preventDefault;
+    // $("h2").innerHTML = "FEAFAE";
+    console.log("WORKS");
+  });
 });

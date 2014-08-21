@@ -244,6 +244,23 @@ span.black {
   color: black;
 }
 
+/*ABOUT ME*/
+
+div.about {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+div.about h1 {
+ margin: 20px auto;
+ text-align: center;
+}
+
+div.about p {
+  margin: 0 auto;
+}
+
 /*PROJECTS PAGE*/
 
 div.projects {
