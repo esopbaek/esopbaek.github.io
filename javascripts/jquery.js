@@ -74,5 +74,5 @@ $(document).ready(function(){
 	
   setInterval(function(){
     $("h2 span.gray").html(skills[Math.floor(Math.random()*skills.length)]);
-  }, 1200);
+  }, 1500);
 });
