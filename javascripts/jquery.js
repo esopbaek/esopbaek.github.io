@@ -59,10 +59,20 @@ $(document).ready(function(){
     $("div.home-page").hide("slow");
     $("div.projects").show("fast");
   });
-
-  $(window).on("click", function(event){
-    event.preventDefault;
-    // $("h2").innerHTML = "FEAFAE";
-    console.log("WORKS");
-  });
+  
+  var skills = ["RAILS", 
+  				"RUBY", 
+				"BACKBONE.JS", 
+				"TDD",
+				"jQUERY",
+				"GIT",
+				"CSS",
+				"HTML",
+				"JAVASCRIPT",
+				"SQL",
+				"Guitar"];
+	
+  setInterval(function(){
+    $("h2 span.gray").html(skills[Math.floor(Math.random()*skills.length)]);
+  }, 1200);
 });
