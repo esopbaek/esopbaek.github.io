@@ -2,16 +2,14 @@
 
 html, body, ul, li, a, h1, h2, h3, h4, h5, hr, article, section, div, p {
 	margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
+	padding: 0;
+	border: 0;
+	font: inherit;
 }
 
 html, body {
 	height: 100%;
-
 	position: relative;
-	
 	overflow: hidden;
 }
 
@@ -39,6 +37,11 @@ html, body {
 	margin-top: 20px;
 }
 
+.sidebar > ul > li > a {
+	text-decoration: none;
+}
+
+
 .sidebar > ul > li {
 	text-align: center;
 	padding: 20px;
@@ -55,8 +58,12 @@ html, body {
 
 li.home:hover, li.projects:hover, li.resume:hover, li.about:hover {
 	background:black;
-  color: white;
-  cursor: pointer;
+  	color: white;
+  	cursor: pointer;
+}
+
+li.resume:hover > a {
+	color: white;
 }
 
 .push {

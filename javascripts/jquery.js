@@ -20,7 +20,6 @@ $(document).ready(function(){
     $("div.home-page").show("fast");
     $("div.about").hide("slow");
     $("div.projects").hide("slow");
-    $("div.resume").hide("slow")
     $("button.nav").show("slow");
   });
 
@@ -30,19 +29,18 @@ $(document).ready(function(){
     $("div.about").hide("slow"); 
   	$("div.home-page").hide("slow");
     $("div.projects").show("fast");
-    $("div.resume").hide("slow")
     $("button.nav").show("fast");
   });
 
-  $("li.resume").on("click", function(event){
-    event.preventDefault;
-    $("body").toggleClass("open-menu");
-    $("div.about").hide("slow");   
-    $("div.home-page").hide("slow");
-    $("div.projects").hide("slow");
-    $("div.resume").show("fast")
-    $("button.nav").show("fast");
-  });
+  // $("li.resume").on("click", function(event){
+  //   event.preventDefault;
+  //   $("body").toggleClass("open-menu");
+  //   $("div.about").hide("slow");
+  //   $("div.home-page").hide("slow");
+  //   $("div.projects").hide("slow");
+  //   $("div.resume").show("fast")
+  //   $("button.nav").show("fast");
+  // });
 
     $("li.about").on("click", function(event){
     event.preventDefault;
@@ -50,7 +48,6 @@ $(document).ready(function(){
     $("div.about").show("fast");   
     $("div.home-page").hide("slow");
     $("div.projects").hide("slow");
-    $("div.resume").hide("slow")
     $("button.nav").show("fast");
   });
 
@@ -70,7 +67,7 @@ $(document).ready(function(){
 				"HTML",
 				"JAVASCRIPT",
 				"SQL",
-				"Guitar"];
+				"OOD"];
 	
   setInterval(function(){
     $("h2 span.gray").html(skills[Math.floor(Math.random()*skills.length)]);
