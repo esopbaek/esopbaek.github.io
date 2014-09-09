@@ -56,14 +56,20 @@ html, body {
 	text-align: center;
 }
 
-li.home:hover, li.projects:hover, li.resume:hover, li.about:hover {
+li.home:hover, li.projects:hover, li.about:hover {
 	background:black;
   	color: white;
   	cursor: pointer;
 }
 
-li.resume:hover > a {
+li.resume:hover {
+	background: black;
+}
+
+li.resume> a:hover {
 	color: white;
+	cursor: pointer;
+	
 }
 
 .push {
