@@ -73,34 +73,18 @@ li.resume> a:hover {
 }
 
 .push {
-    /* Relative positioning lets us move it over, as well as stack it using z-index. */
     position: relative;
-
-    /* Default no nudging. */
     left: 0;
-
-    /* Container has to be full width and height of body element, which is the same size as viewport. */
     width: 100%;
     height: 100%;
-
-    /* We don't want scroll bars or content sticking out. */
     overflow: hidden;
-
-    /* Stack push container on top of sidebar. Push needs to be front most. */
     z-index: 2;
-
-    /* It needs a background color, else you will see the sidebar behind it. */
     background: #F7F7F7;
-
-    /* The magic of making it slide. */
     transition: left 0.5s;
-
-    /* Fancy shadow to show depth if desired. */
     box-shadow: -10px 0 20px rgba(0,0,0,0.2);
 }
 
 .open-menu .push {
-    /* Move the push container over, revealing the sidebar. */
     left: 200px;
 }
 
@@ -119,6 +103,7 @@ li.resume> a:hover {
     height: 100%;
     width: 100%;
     overflow: auto;
+	background: white;
 }
 
 .home-page {
@@ -205,8 +190,8 @@ div.about {
 }
 
 div.about h1 {
- margin: 20px auto;
- text-align: center;
+    text-align: center;
+    padding: 30px;
 }
 
 div.about p {
@@ -222,30 +207,29 @@ div.projects {
 }
 
 div.projects > h1 {
-	text-align: center;
-  padding: 40px;
+  text-align: center;
+  padding: 30px;
+  background: #006699;
+  color: white;
 }
 
-.yourfitnesspal, .asteroids, .activerecord, .tictactoe {
+.yourfitnesspal, .asteroids, .activerecord, .tictactoe, section.trello {
   width: 800px;
-  margin: 13px auto;
+  margin: 35px auto;
   display: block;
 }
 
 .tictactoe {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+}
+
+div.blue, div.red {
+  border-top: 1px dashed grey;
+  border-bottom: 1px dashed grey;
 }
 
 div.orange {
-  background-color: #f5f3e4;
-  border-top: 1px solid #FAC146;
-  border-bottom: 1px solid #FAC146;
-}
-
-div.blue {
-  background-color: #CEE5F0;
-  border-top: 1px solid #3399CC;
-  border-bottom: 1px solid #3399CC;
+  border-bottom: 1px dashed grey;
 }
 
 div.projects > div.orange > .yourfitnesspal > div.image {
@@ -289,19 +273,23 @@ div.projects > div.orange > .yourfitnesspal > li {
 }
 
 div.projects > .asteroids > div.asteroidsimg, 
-div.projects > div.blue > .activerecord > div.active-record-img,
-div.projects > .tictactoe > div.tictactoeimg
- {
+div.projects > .activerecord > div.active-record-img,
+div.projects > div.blue > .tictactoe > div.tictactoeimg {
   width: 550px;
   height: 400px;
   margin: 10px auto;
 }
 
+div.trelloimg {
+	margin: 20px;
+}
+
 div.projects > .asteroids > div.asteroidsimg > img, 
-div.projects >  div.blue > .activerecord > div.active-record-img > img,
-div.projects > .tictactoe > div.tictactoeimg > img {
+div.projects > .activerecord > div.active-record-img > img,
+div.projects > div.blue > .tictactoe > div.tictactoeimg > img,
+div.projects > div.red > .trello > div.trelloimg > img {
   max-width: 100%;
-  max-height: 100%
+  max-height: 100%;
 }
 
 div.projects h3 {
@@ -320,7 +308,6 @@ div.projects > p {
 
 body {
     font-family: Edmondsans-Regular;
-    background: #E0E0E0;
 }
 
 nav.sidebar {
