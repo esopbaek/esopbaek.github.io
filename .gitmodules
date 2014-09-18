@@ -1,3 +1,6 @@
 [submodule "TicTacToe-UI"]
 	path = TicTacToe-UI
 	url = https://github.com/esopbaek/TicTacToe-UI.git
+[submodule "Classic-Asteroids"]
+	path = Classic-Asteroids
+	url = https://github.com/esopbaek/Classic-Asteroids.git
