@@ -184,9 +184,24 @@ span.black {
 /*ABOUT ME*/
 
 div.about {
+	height: 100%;
+	background: lightgrey;
+}
+
+div.about-me {
   width: 800px;
-  height: 100%;
-  margin: 0 auto;
+  height: 270px;
+  margin: 20px auto;
+  border: 1px solid lightgrey;
+  padding: 30px;
+  border-radius: 5px;
+  background: white;
+}
+
+div.about-me h5 {
+	font-size: 25px;
+	margin: 0;
+	padding: 10px;
 }
 
 div.about h1 {
@@ -206,7 +221,7 @@ div.projects {
   color: #808080;
 }
 
-div.projects > h1 {
+div.projects > h1, div.about > h1 {
   text-align: center;
   padding: 30px;
   background: #006699;

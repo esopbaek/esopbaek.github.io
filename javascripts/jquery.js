@@ -67,7 +67,7 @@ $(document).ready(function(){
 				"HTML",
 				"JAVASCRIPT",
 				"SQL",
-				"OOD"];
+				"OOP"];
 	
   setInterval(function(){
     $("h2 span.gray").html(skills[Math.floor(Math.random()*skills.length)]);
