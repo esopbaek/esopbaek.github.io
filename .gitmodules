@@ -4,6 +4,6 @@
 [submodule "Classic-Asteroids"]
 	path = Classic-Asteroids
 	url = https://github.com/esopbaek/Classic-Asteroids.git
-[submodule "BlueApronTakeHome"]
-	path = BlueApronTakeHome
+[submodule "abc"]
+	path = abc
 	url = https://github.com/esopbaek/BlueApronTakeHome.git
